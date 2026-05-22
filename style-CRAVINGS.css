@@ -1,4 +1,4 @@
-  :root {
+:root {
     --purple: #9B5DE5;
     --purple-light: #C77DFF;
     --purple-dark: #6B21A8;
@@ -414,7 +414,83 @@
   .price-card.elite .price-cta { background: linear-gradient(90deg, var(--purple), var(--purple-light)); color: #fff; }
   .price-card.elite .price-cta:hover { box-shadow: 0 8px 32px rgba(199,125,255,0.4); opacity: 0.9; }
   .price-amount { font-size: 46px; }
- 
+
+  .maintenance-card {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    background: var(--bg3);
+    border: 0.5px solid var(--purple);
+    border-radius: 20px;
+    padding: 40px 44px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .maintenance-card::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 80% 50%, rgba(155,93,229,0.1) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .maintenance-left {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    flex: 1;
+  }
+  .maintenance-icon {
+    font-size: 36px;
+    background: rgba(155,93,229,0.15);
+    border: 0.5px solid var(--border);
+    border-radius: 14px;
+    width: 64px; height: 64px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .maintenance-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .maintenance-desc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 380px;
+  }
+  .maintenance-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+  }
+  .maintenance-price { text-align: center; }
+  .maintenance-cta {
+    display: inline-block;
+    background: var(--purple);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 100px;
+    font-size: 15px; font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .maintenance-cta:hover { background: var(--purple-light); box-shadow: 0 8px 32px rgba(155,93,229,0.35); }
+
+  @media (max-width: 900px) {
+    .maintenance-card { flex-direction: column; gap: 32px; padding: 32px 24px; }
+    .maintenance-right { flex-direction: column; gap: 20px; width: 100%; }
+    .maintenance-right .price-features { min-width: unset !important; width: 100%; }
+    .maintenance-cta { width: 100%; text-align: center; }
+  }
+
   /* TESTIMONIAL */
   #testimonios { padding: 100px 0; }
   .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 56px; }
