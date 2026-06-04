@@ -1065,3 +1065,13 @@ footer p { font-size: 13px; color: var(--muted); }
   .services-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 380px; }
 }
+/* PROCESO 4 PASOS */
+.process-steps--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 900px) {
+  .process-steps--4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .process-steps--4 { grid-template-columns: 1fr; }
+}
