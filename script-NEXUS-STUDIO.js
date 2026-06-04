@@ -12,7 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (t) {
       e.preventDefault();
       t.scrollIntoView({ behavior: 'smooth' });
-      // Close mobile nav if open
       navMobile.classList.remove('open');
     }
   });
@@ -31,13 +30,11 @@ if (navToggle && navMobile) {
 document.querySelectorAll('.faq-question').forEach(btn => {
   btn.addEventListener('click', () => {
     const expanded = btn.getAttribute('aria-expanded') === 'true';
-    // Close all
     document.querySelectorAll('.faq-question').forEach(b => {
       b.setAttribute('aria-expanded', 'false');
       const ans = b.nextElementSibling;
       if (ans) ans.classList.remove('open');
     });
-    // Open clicked if it was closed
     if (!expanded) {
       btn.setAttribute('aria-expanded', 'true');
       const answer = btn.nextElementSibling;
@@ -58,7 +55,7 @@ if (contactForm) {
     const proyecto = document.getElementById('proyecto').value;
 
     const msg = encodeURIComponent(
-      `Hola Cravings, quiero mi demo gratis 🚀\n\n` +
+      `Hola Nexus Studio, quiero mi demo gratis 🚀\n\n` +
       `Nombre: ${nombre}\n` +
       `Negocio: ${negocio}\n` +
       `WhatsApp: ${whatsapp}\n` +
