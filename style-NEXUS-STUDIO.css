@@ -485,6 +485,17 @@ h2 {
   color: var(--muted);
   margin-bottom: 16px;
 }
+
+.portfolio-demo {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--purple);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 4px;
+  transition: gap 0.2s;
+}
+.portfolio-demo:hover { gap: 8px; }
+
 .portfolio-cta {
   font-size: 14px;
   font-weight: 600;
