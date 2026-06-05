@@ -749,6 +749,8 @@ h2 {
   padding: 36px 28px;
   position: relative;
   transition: transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 .price-card:hover { transform: translateY(-4px); }
 .price-card.featured {
@@ -772,7 +774,7 @@ h2 {
 }
 .price-amount sup { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; vertical-align: top; margin-top: 10px; display: inline-block; }
 .price-period { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
-.price-features { list-style: none; padding: 0; margin-bottom: 28px; }
+.price-features { list-style: none; padding: 0; margin-bottom: 28px; flex: 1; }
 .price-features li {
   font-size: 14px; color: var(--muted);
   padding: 8px 0;
