@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titan Fitness | Gimnasio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style-GIMNASIO.css">
+</head>
+<body class="bg-zinc-950 text-white">
+  <header class="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-zinc-950/80 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
+      <a href="#hero" class="text-xl font-black uppercase tracking-wide">
+        Titan <span class="text-red-500">Fitness</span>
+      </a>
+
+      <button id="menuBtn" class="rounded border border-white/20 px-3 py-2 text-sm font-bold md:hidden" aria-label="Abrir menu">
+        MENU
+      </button>
+
+      <ul id="navMenu" class="hidden absolute left-0 top-full w-full flex-col gap-1 border-b border-white/10 bg-zinc-950 px-5 py-4 text-sm font-bold uppercase md:static md:flex md:w-auto md:flex-row md:border-0 md:bg-transparent md:p-0">
+        <li><a class="nav-link" href="#planes">Planes</a></li>
+        <li><a class="nav-link" href="#entrenadores">Entrenadores</a></li>
+        <li><a class="nav-link" href="#instalaciones">Instalaciones</a></li>
+        <li><a class="nav-link" href="#horarios">Horarios</a></li>
+        <li><a class="nav-cta" href="#cta">Unirme</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-5 pb-20 pt-28">
+        <div class="max-w-3xl">
+          <p class="mb-4 inline-block border-l-4 border-red-500 pl-3 text-sm font-black uppercase text-red-300">
+            Abre tu mejor version
+          </p>
+          <h1 class="mb-6 text-5xl font-black uppercase leading-none md:text-7xl lg:text-8xl">
+            Titan Fitness
+          </h1>
+          <p class="mb-8 max-w-2xl text-lg text-zinc-200 md:text-2xl">
+            Entrena fuerte, mejora tu energia y consigue resultados reales con planes flexibles, coaches expertos y un ambiente que te empuja a avanzar.
+          </p>
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <a href="#planes" class="btn-primary">Ver membresias</a>
+            <a href="#horarios" class="btn-secondary">Ver horarios</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planes" class="section-block">
+      <div class="mx-auto max-w-7xl px-5">
+        <div class="section-title">
+          <p>Membresias</p>
+          <h2>Planes para empezar hoy</h2>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="plan-card">
+            <h3>Basico</h3>
+            <p class="price">$499<span>/mes</span></p>
+            <ul>
+              <li>Acceso general</li>
+              <li>Area de pesas</li>
+              <li>Casilleros</li>
+            </ul>
+            <a href="#cta">Elegir plan</a>
+          </article>
+
+          <article class="plan-card featured">
+            <div class="badge">Mas elegido</div>
+            <h3>Pro</h3>
+            <p class="price">$799<span>/mes</span></p>
+            <ul>
+              <li>Acceso ilimitado</li>
+              <li>Clases grupales</li>
+              <li>Evaluacion mensual</li>
+            </ul>
+            <a href="#cta">Elegir plan</a>
+          </article>
+
+          <article class="plan-card">
+            <h3>Elite</h3>
+            <p class="price">$1,199<span>/mes</span></p>
+            <ul>
+              <li>Coach personal</li>
+              <li>Plan nutricional</li>
+              <li>Acceso VIP</li>
+            </ul>
+            <a href="#cta">Elegir plan</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="entrenadores" class="section-block bg-zinc-900">
+      <div class="mx-auto max-w-7xl px-5">
+        <div class="section-title">
+          <p>Equipo Titan</p>
+          <h2>Entrenadores que te guian</h2>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=900&q=80" alt="Entrenadora de fuerza">
+            <div>
+              <h3>Valeria Cruz</h3>
+              <p>Fuerza y tecnica</p>
+            </div>
+          </article>
+          <article class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1582109249233-17955f4e46f2?auto=format&fit=crop&w=900&q=80" alt="Entrenador funcional">
+            <div>
+              <h3>Marco Leon</h3>
+              <p>Funcional y HIIT</p>
+            </div>
+          </article>
+          <article class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Entrenadora de movilidad">
+            <div>
+              <h3>Andrea Solis</h3>
+              <p>Movilidad y cardio</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="instalaciones" class="section-block">
+      <div class="mx-auto max-w-7xl px-5">
+        <div class="section-title">
+          <p>Espacios</p>
+          <h2>Instalaciones de alto rendimiento</h2>
+        </div>
+        <div class="facility-grid">
+          <img class="facility-large" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" alt="Area de gimnasio con equipo moderno">
+          <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=900&q=80" alt="Area de entrenamiento funcional">
+          <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=900&q=80" alt="Pesas y mancuernas">
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios" class="section-block bg-zinc-900">
+      <div class="mx-auto max-w-7xl px-5">
+        <div class="section-title">
+          <p>Resultados</p>
+          <h2>Historias de miembros</h2>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="testimonial-card">
+            <p>"En tres meses subi mi fuerza y me siento con mas energia todos los dias."</p>
+            <h3>Daniela M.</h3>
+          </article>
+          <article class="testimonial-card">
+            <p>"Los coaches corrigen mi tecnica y el ambiente te motiva desde que entras."</p>
+            <h3>Carlos R.</h3>
+          </article>
+          <article class="testimonial-card">
+            <p>"El plan Pro fue perfecto para crear rutina sin sentirme perdido."</p>
+            <h3>Paola G.</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="horarios" class="section-block">
+      <div class="mx-auto max-w-7xl px-5">
+        <div class="section-title">
+          <p>Clases</p>
+          <h2>Horarios semanales</h2>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Miercoles</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06:00</td>
+                <td>HIIT</td>
+                <td>Fuerza</td>
+                <td>HIIT</td>
+                <td>Cardio</td>
+              </tr>
+              <tr>
+                <td>12:00</td>
+                <td>Funcional</td>
+                <td>Movilidad</td>
+                <td>Funcional</td>
+                <td>Libre</td>
+              </tr>
+              <tr>
+                <td>19:00</td>
+                <td>Fuerza</td>
+                <td>Box fit</td>
+                <td>Fuerza</td>
+                <td>Bootcamp</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="cta-section">
+      <div class="mx-auto max-w-4xl px-5 text-center">
+        <p class="mb-3 text-sm font-black uppercase text-cyan-300">Oferta de apertura</p>
+        <h2 class="mb-5 text-4xl font-black uppercase md:text-6xl">Inscribete y paga 0 cuota inicial</h2>
+        <p class="mx-auto mb-8 max-w-2xl text-zinc-200">
+          Deja tus datos y nuestro equipo te contactara para activar tu membresia Titan.
+        </p>
+        <form id="leadForm" class="lead-form">
+          <input type="text" id="name" placeholder="Nombre" required>
+          <input type="tel" id="phone" placeholder="Telefono" required>
+          <button type="submit">Quiero entrenar</button>
+        </form>
+        <p id="formMessage" class="mt-4 hidden font-bold text-cyan-300"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-black px-5 py-8 text-center text-sm text-zinc-400">
+    <p class="font-black uppercase text-white">Titan <span class="text-red-500">Fitness</span></p>
+    <p class="mt-2">Av. Energia 120, Ciudad Deportiva | Lun a Sab 6:00 - 22:00</p>
+  </footer>
+
+  <script src="script-GIMNASIO.js"></script>
+</body>
+</html>

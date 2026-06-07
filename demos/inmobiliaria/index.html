@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista Real | Inmobiliaria</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style-INMOBILARIA.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#inicio" class="brand" aria-label="Vista Real inicio">
+        <span class="brand-mark">VR</span>
+        <span>Vista Real</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#propiedades">Propiedades</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#agentes">Agentes</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Inmobiliaria corporativa</p>
+        <h1>Compra, vende o invierte con una vista clara del mercado.</h1>
+        <p class="hero-text">
+          En Vista Real conectamos propiedades de alto potencial con compradores y vendedores que buscan una gestion confiable, moderna y transparente.
+        </p>
+        <div class="hero-actions">
+          <a href="#propiedades" class="btn btn-primary">Ver propiedades</a>
+          <a href="#contacto" class="btn btn-secondary">Vender mi propiedad</a>
+        </div>
+      </div>
+
+      <form class="search-box" aria-label="Busqueda de propiedades">
+        <label>
+          Tipo
+          <select id="propertyType">
+            <option value="todas">Todas</option>
+            <option value="casa">Casa</option>
+            <option value="departamento">Departamento</option>
+            <option value="terreno">Terreno</option>
+          </select>
+        </label>
+        <label>
+          Zona
+          <select>
+            <option>Zona centro</option>
+            <option>Zona norte</option>
+            <option>Zona residencial</option>
+          </select>
+        </label>
+        <label>
+          Presupuesto
+          <select>
+            <option>$2M - $4M</option>
+            <option>$4M - $8M</option>
+            <option>$8M+</option>
+          </select>
+        </label>
+        <button type="button" class="btn btn-primary" id="filterButton">Buscar</button>
+      </form>
+    </section>
+
+    <section class="section" id="propiedades">
+      <div class="section-heading">
+        <p class="eyebrow">Seleccion especial</p>
+        <h2>Propiedades destacadas</h2>
+        <p>Opciones listas para habitar, rentar o convertir en una inversion de largo plazo.</p>
+      </div>
+
+      <div class="property-grid">
+        <article class="property-card" data-type="casa">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=80" alt="Casa moderna con jardin">
+          <div class="card-body">
+            <span class="tag">Casa</span>
+            <h3>Residencia Bosques</h3>
+            <p class="location">Zona residencial</p>
+            <div class="property-meta">
+              <span>4 rec.</span>
+              <span>3 banos</span>
+              <span>320 m2</span>
+            </div>
+            <strong>$6,850,000 MXN</strong>
+          </div>
+        </article>
+
+        <article class="property-card" data-type="departamento">
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Departamento elegante con sala iluminada">
+          <div class="card-body">
+            <span class="tag">Departamento</span>
+            <h3>Torre Alameda</h3>
+            <p class="location">Zona centro</p>
+            <div class="property-meta">
+              <span>2 rec.</span>
+              <span>2 banos</span>
+              <span>118 m2</span>
+            </div>
+            <strong>$3,250,000 MXN</strong>
+          </div>
+        </article>
+
+        <article class="property-card" data-type="terreno">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Terreno amplio en zona tranquila">
+          <div class="card-body">
+            <span class="tag">Terreno</span>
+            <h3>Lote Horizonte</h3>
+            <p class="location">Zona norte</p>
+            <div class="property-meta">
+              <span>Privado</span>
+              <span>Servicios</span>
+              <span>540 m2</span>
+            </div>
+            <strong>$2,100,000 MXN</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section muted" id="servicios">
+      <div class="section-heading">
+        <p class="eyebrow">Soluciones inmobiliarias</p>
+        <h2>Servicios</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-icon">01</span>
+          <h3>Compra de propiedades</h3>
+          <p>Acompanamos la busqueda, comparacion, negociacion y cierre de la propiedad ideal.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon">02</span>
+          <h3>Venta profesional</h3>
+          <p>Preparamos estrategia comercial, fotografias, promocion y seguimiento de prospectos.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon">03</span>
+          <h3>Asesoria de inversion</h3>
+          <p>Analizamos ubicacion, plusvalia y rentabilidad para tomar decisiones con datos claros.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section agents-section" id="agentes">
+      <div class="section-heading">
+        <p class="eyebrow">Equipo comercial</p>
+        <h2>Agentes</h2>
+      </div>
+
+      <div class="agent-grid">
+        <article class="agent-card">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Agente inmobiliaria Laura Medina">
+          <h3>Laura Medina</h3>
+          <p>Especialista en residencias</p>
+          <a href="mailto:laura@vistareal.com">laura@vistareal.com</a>
+        </article>
+        <article class="agent-card">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Agente inmobiliario Carlos Rivas">
+          <h3>Carlos Rivas</h3>
+          <p>Especialista en inversion</p>
+          <a href="mailto:carlos@vistareal.com">carlos@vistareal.com</a>
+        </article>
+        <article class="agent-card">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Agente inmobiliaria Sofia Ortega">
+          <h3>Sofia Ortega</h3>
+          <p>Especialista en ventas</p>
+          <a href="mailto:sofia@vistareal.com">sofia@vistareal.com</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section muted" id="testimonios">
+      <div class="section-heading">
+        <p class="eyebrow">Clientes satisfechos</p>
+        <h2>Testimonios</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <blockquote>
+          <p>"Vendimos nuestra casa en menos tiempo del esperado y con una comunicacion excelente."</p>
+          <cite>Mariana G.</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Nos mostraron opciones reales, bien filtradas y ajustadas a nuestro presupuesto."</p>
+          <cite>Jorge L.</cite>
+        </blockquote>
+        <blockquote>
+          <p>"El proceso fue ordenado, claro y muy profesional desde la primera llamada."</p>
+          <cite>Andrea P.</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="contact-info">
+        <p class="eyebrow">Hablemos</p>
+        <h2>Encuentra tu siguiente oportunidad inmobiliaria.</h2>
+        <p>Dejanos tus datos y un asesor de Vista Real se comunicara contigo para compradores o vendedores.</p>
+        <ul>
+          <li>Telefono: +52 55 1234 5678</li>
+          <li>Email: contacto@vistareal.com</li>
+          <li>Horario: Lunes a sabado, 9:00 - 18:00</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label>
+          Nombre
+          <input type="text" name="name" placeholder="Tu nombre" required>
+        </label>
+        <label>
+          Correo
+          <input type="email" name="email" placeholder="tu@email.com" required>
+        </label>
+        <label>
+          Interes
+          <select name="interest">
+            <option>Comprar propiedad</option>
+            <option>Vender propiedad</option>
+            <option>Invertir</option>
+          </select>
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" rows="4" placeholder="Cuentanos que necesitas"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a href="#inicio" class="brand">
+        <span class="brand-mark">VR</span>
+        <span>Vista Real</span>
+      </a>
+      <p>Bienes raices con vision, estrategia y confianza.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#propiedades">Propiedades</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </footer>
+
+  <script src="script-INMOBILARIA.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 12px;
+  color: #d4d4d8;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-cta {
+  display: block;
+  background: #ef4444;
+  color: #ffffff;
+  padding: 10px 18px;
+  font-weight: 900;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.nav-cta:hover {
+  background: #06b6d4;
+  transform: translateY(-2px);
+}
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1600&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(9, 9, 11, 0.95), rgba(9, 9, 11, 0.72), rgba(239, 68, 68, 0.18));
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 14px 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #dc2626;
+}
+
+.btn-secondary {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  border-color: #22d3ee;
+  color: #22d3ee;
+}
+
+.section-block {
+  padding: 88px 0;
+}
+
+.section-title {
+  margin-bottom: 36px;
+}
+
+.section-title p {
+  margin-bottom: 8px;
+  color: #ef4444;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  max-width: 720px;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.plan-card,
+.testimonial-card {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #18181b;
+  padding: 28px;
+}
+
+.plan-card.featured {
+  border-color: #ef4444;
+  background: #231313;
+  transform: translateY(-8px);
+}
+
+.badge {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #22d3ee;
+  color: #083344;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.plan-card h3 {
+  margin-bottom: 16px;
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.price {
+  margin-bottom: 24px;
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.price span {
+  color: #a1a1aa;
+  font-size: 16px;
+}
+
+.plan-card ul {
+  margin-bottom: 28px;
+  color: #d4d4d8;
+  line-height: 2;
+}
+
+.plan-card a {
+  display: block;
+  background: #ffffff;
+  color: #09090b;
+  padding: 14px;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.plan-card a:hover {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.trainer-card {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #09090b;
+}
+
+.trainer-card img {
+  height: 340px;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+
+.trainer-card div {
+  padding: 22px;
+}
+
+.trainer-card h3 {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.trainer-card p {
+  color: #22d3ee;
+  font-weight: 700;
+}
+
+.facility-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.facility-grid img {
+  min-height: 260px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.testimonial-card p {
+  margin-bottom: 22px;
+  color: #e4e4e7;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.testimonial-card h3 {
+  color: #ef4444;
+  font-weight: 900;
+}
+
+.schedule-table {
+  min-width: 720px;
+  width: 100%;
+  border-collapse: collapse;
+  background: #18181b;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 18px;
+  text-align: left;
+}
+
+.schedule-table th {
+  background: #ef4444;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.schedule-table td:first-child {
+  color: #22d3ee;
+  font-weight: 900;
+}
+
+.cta-section {
+  padding: 96px 0;
+  background:
+    linear-gradient(rgba(9, 9, 11, 0.86), rgba(9, 9, 11, 0.86)),
+    url("https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1600&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.lead-form {
+  display: grid;
+  gap: 12px;
+}
+
+.lead-form input,
+.lead-form button {
+  min-height: 54px;
+  padding: 14px 16px;
+  font-weight: 800;
+}
+
+.lead-form input {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  outline: none;
+}
+
+.lead-form input:focus {
+  border-color: #22d3ee;
+}
+
+.lead-form button {
+  background: #ef4444;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.lead-form button:hover {
+  background: #06b6d4;
+}
+
+@media (min-width: 768px) {
+  .facility-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .facility-large {
+    grid-row: span 2;
+    min-height: 540px;
+  }
+
+  .lead-form {
+    grid-template-columns: 1fr 1fr auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-block {
+    padding: 64px 0;
+  }
+
+  .plan-card.featured {
+    transform: none;
+  }
+}

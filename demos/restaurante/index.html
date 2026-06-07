@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor Norteño | Restaurante Mexicano</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style-RESTAURANTE.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">SN</span>
+      <span>Sabor Norteño</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="navMenu" aria-label="Navegacion principal">
+      <a href="#destacados">Platillos</a>
+      <a href="#menu">Menu</a>
+      <a href="#historia">Historia</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#reservaciones" class="nav-cta">Reservar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Cocina mexicana del norte</p>
+        <h1>Sabor Norteño</h1>
+        <p class="hero-text">Cortes a las brasas, tortillas hechas a mano, salsas intensas y un comedor elegante para disfrutar Mexico con calma.</p>
+        <div class="hero-actions">
+          <a href="#reservaciones" class="btn btn-primary">Reservar mesa</a>
+          <a href="#menu" class="btn btn-light">Ver menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-band">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow">Abierto hoy</p>
+          <h2>Un lugar calido para comer bien.</h2>
+        </div>
+        <div class="intro-item">
+          <strong>Horario</strong>
+          <span>Lun - Dom | 1:00 PM - 11:00 PM</span>
+        </div>
+        <div class="intro-item">
+          <strong>Especialidad</strong>
+          <span>Cabrito, arrachera y enchiladas norteñas</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="destacados">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Favoritos de la casa</p>
+          <h2>Platillos destacados</h2>
+        </div>
+
+        <div class="featured-grid">
+          <article class="dish-card">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=80" alt="Tacos de carne asada con salsa roja">
+            <div class="dish-info">
+              <span class="price">$185</span>
+              <h3>Tacos de arrachera</h3>
+              <p>Carne al carbon, cebolla tatemada, cilantro fresco y salsa de chile morita.</p>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80" alt="Corte de carne servido en tabla">
+            <div class="dish-info">
+              <span class="price">$360</span>
+              <h3>Corte regio</h3>
+              <p>Rib eye sellado a la parrilla, papas cambray, chile toreado y mantequilla de ajo.</p>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=900&q=80" alt="Enchiladas mexicanas con crema y queso">
+            <div class="dish-info">
+              <span class="price">$165</span>
+              <h3>Enchiladas norteñas</h3>
+              <p>Tortilla de maiz, chile colorado, queso fresco, crema y frijoles refritos.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Menu</p>
+        <h2>Sabores para compartir</h2>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Categorias de menu">
+          <button class="tab-btn active" data-category="entradas" type="button">Entradas</button>
+          <button class="tab-btn" data-category="fuertes" type="button">Fuertes</button>
+          <button class="tab-btn" data-category="bebidas" type="button">Bebidas</button>
+          <button class="tab-btn" data-category="postres" type="button">Postres</button>
+        </div>
+
+        <div class="menu-list" id="menuList"></div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="historia">
+      <div class="container story-grid">
+        <div class="story-photo">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=80" alt="Interior elegante de restaurante con mesas preparadas">
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">Nuestra historia</p>
+          <h2>Recetas familiares con mesa de ciudad.</h2>
+          <p>Sabor Norteno nacio de una parrilla familiar, de domingos largos y de salsas preparadas en molcajete. Hoy llevamos esa cocina al centro de la mesa con ingredientes frescos, servicio atento y un ambiente mexicano sobrio.</p>
+          <p>La carta honra el norte: carne a las brasas, maiz, frijol, queso, chiles secos y postres sencillos que saben a casa.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Galeria</p>
+          <h2>Momentos con mucho sabor</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=700&q=80" alt="Tacos mexicanos servidos con limon">
+          <img src="https://images.unsplash.com/photo-1515669097368-22e68427d265?auto=format&fit=crop&w=700&q=80" alt="Mesa de restaurante con platos al centro">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=700&q=80" alt="Chef preparando comida en cocina">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" alt="Comedor de restaurante con luces calidas">
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="opiniones">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Opiniones</p>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"La arrachera estuvo perfecta y el ambiente se siente elegante sin ser frio. Volveria con amigos."</p>
+            <strong>Mariana G.</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Buen servicio, tortillas recien hechas y salsas con caracter. El lugar luce muy cuidado."</p>
+            <strong>Carlos R.</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Ideal para una cena tranquila. La comida llega caliente y las porciones son generosas."</p>
+            <strong>Lucia M.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reservation-section" id="reservaciones">
+      <div class="container reservation-grid">
+        <div class="reservation-copy">
+          <p class="eyebrow">Reservaciones</p>
+      <h2>Guarda tu mesa</h2>
+          <p>Completa tus datos y prepararemos tu visita. Para grupos grandes, nuestro equipo confirma disponibilidad por telefono.</p>
+          <ul class="reservation-notes">
+            <li>Terraza disponible por la tarde</li>
+            <li>Opciones vegetarianas en menu</li>
+            <li>Estacionamiento cercano</li>
+          </ul>
+        </div>
+
+        <form class="reservation-form" id="reservationForm">
+          <label>
+            Nombre
+            <input type="text" id="name" placeholder="Tu nombre" required>
+          </label>
+          <label>
+            Telefono
+            <input type="tel" id="phone" placeholder="55 1234 5678" required>
+          </label>
+          <div class="form-row">
+            <label>
+              Fecha
+              <input type="date" id="date" required>
+            </label>
+            <label>
+              Hora
+              <input type="time" id="time" required>
+            </label>
+          </div>
+          <label>
+            Personas
+            <select id="people" required>
+              <option value="">Selecciona</option>
+              <option>2 personas</option>
+              <option>3 personas</option>
+              <option>4 personas</option>
+              <option>5 personas</option>
+              <option>6+ personas</option>
+            </select>
+          </label>
+          <button class="btn btn-primary full" type="submit">Enviar reservacion</button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="map-section" id="mapa" aria-label="Mapa y ubicacion">
+      <div class="map-info">
+        <p class="eyebrow">Ubicacion</p>
+        <h2>Av. Hidalgo 245, Centro</h2>
+        <p>Monterrey, Nuevo Leon</p>
+      </div>
+      <iframe
+        title="Mapa de Monterrey Centro"
+        src="https://www.google.com/maps?q=Monterrey%20Centro&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#inicio">
+          <span class="brand-mark">SN</span>
+          <span>Sabor Norteño</span>
+        </a>
+        <p>Cocina mexicana calida, elegante y llena de tradicion.</p>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <p>Tel. 81 5555 2026</p>
+        <p>reservas@sabornorteno.mx</p>
+      </div>
+      <div>
+        <h3>Horario</h3>
+        <p>Lunes a domingo</p>
+        <p>1:00 PM - 11:00 PM</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Sabor Norteño. Demo web para restaurante.</p>
+  </footer>
+
+  <script src="script-RESTAURANTE.js"></script>
+</body>
+</html>
