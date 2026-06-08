@@ -1063,7 +1063,6 @@ footer p { font-size: 13px; color: var(--muted); }
 }
 
 /* DEMOS PLACEHOLDER */
-#portafolio { padding: 100px 0; background: var(--bg2); }
 
 .demos-placeholder {
   display: grid;
@@ -1118,7 +1117,6 @@ footer p { font-size: 13px; color: var(--muted); }
 }
 
 /* PRICING SERVICIOS */
-#precios { padding: 100px 0; }
 
 .pricing-grid-servicios {
   display: grid;
