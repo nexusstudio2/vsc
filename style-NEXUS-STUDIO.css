@@ -390,78 +390,22 @@ h2 {
 .portfolio-card:hover { border-color: var(--purple); transform: translateY(-4px); }
 .portfolio-card--wide { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; }
 .portfolio-preview {
+  width: 100%;
   height: 220px;
-  display: flex; align-items: center; justify-content: center;
-  position: relative; overflow: hidden;
-}
-.portfolio-card--wide .portfolio-preview { height: auto; min-height: 200px; }
-.preview-content {
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  text-align: center; z-index: 1; padding: 20px;
-}
-.preview-logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 22px;
-  letter-spacing: 2px;
-}
-.preview-tagline { font-size: 12px; opacity: 0.8; }
-.preview-btn {
-  margin-top: 8px;
-  padding: 8px 20px;
-  border-radius: 100px;
-  font-size: 12px;
-  font-weight: 600;
-  background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.3);
-  color: #fff;
-  backdrop-filter: blur(4px);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
 }
 
-/* Portfolio themes */
-.barberia {
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a0a2e 100%);
-  color: #fff;
+.portfolio-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
-.barberia::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(123,79,168,0.08) 20px, rgba(123,79,168,0.08) 21px);
-}
-.restaurante {
-  background: linear-gradient(135deg, #2d1a00 0%, #5a2d0c 100%);
-  color: #fff;
-}
-.restaurante::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: radial-gradient(circle at 30% 70%, rgba(192,149,74,0.2) 0%, transparent 60%);
-}
-.dentista {
-  background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
-  color: #fff;
-}
-.dentista::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: radial-gradient(circle at 70% 30%, rgba(100,180,255,0.15) 0%, transparent 60%);
-}
-.gimnasio {
-  background: linear-gradient(135deg, #1a0505 0%, #3d1010 100%);
-  color: #fff;
-}
-.gimnasio::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(220,50,50,0.2) 0%, transparent 60%);
-}
-.inmobiliaria {
-  background: linear-gradient(135deg, #0a1a0a 0%, #1a3d1a 100%);
-  color: #fff;
-}
-.inmobiliaria::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: radial-gradient(circle at 20% 80%, rgba(50,180,80,0.15) 0%, transparent 60%);
+
+.portfolio-card:hover .portfolio-preview img {
+  transform: scale(1.05);
 }
 
 .portfolio-info { padding: 28px; }
